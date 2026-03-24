@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 简约主页</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">关于</a>
+            <a href="#">商店</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Gmail</a>
+            <a href="#">图片</a>
+            <i class="fas fa-th menu-icon"></i>
+            <div class="avatar">M</div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="main-content">
+        <img src="./googleLogo.png" alt="Google Logo" class="logo">
+
+        <!-- 搜索框区域 -->
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="在 Google 上搜索，或者输入一个网址">
+            <i class="fas fa-microphone mic-icon"></i>
+        </div>
+
+        <!-- 按钮区域 -->
+        <div class="buttons">
+            <button class="search-btn">Google 搜索</button>
+            <button class="search-btn">手气不错</button>
+        </div>
+
+        <!-- 语言切换提示 -->
+        <div class="language">
+            Google 提供：<a href="#">English</a> <a href="#">繁体中文</a>
+        </div>
+    </main>
+
+    <!-- 底部footer -->
+    <footer class="footer">
+        <div class="country">
+            中国
+        </div>
+        <div class="footer-links">
+            <div class="footer-left">
+                <a href="#">广告</a>
+                <a href="#">商业</a>
+                <a href="#">关于</a>
+                <a href="#">如何搜索</a>
+            </div>
+            <div class="footer-right">
+                <a href="#">隐私</a>
+                <a href="#">条款</a>
+                <a href="#">设置</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
