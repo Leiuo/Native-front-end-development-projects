@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册/登录表单 | 现代UI设计</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- 引入 Font Awesome 6 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- 切换选项卡 -->
+            <div class="form-tabs">
+                <button class="tab-btn active" data-tab="login">登录</button>
+                <button class="tab-btn" data-tab="register">注册</button>
+            </div>
+
+            <!-- 登录表单 -->
+            <form action="" id="loginForm" class="form active">
+                <h2>欢迎登录</h2>
+                <p class="form-subtitle">请输入您的账号信息</p>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="loginEmail" placeholder="电子邮箱" required>
+                    <div class="error-message" id="loginEmailError"></div>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="loginPassword" placeholder="密码" required>
+                    <i class="fas fa-eye-slash password-toggle" data-target="loginPassword"></i>
+                    <div class="error-message" id="loginPasswordError"></div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe"> 记住我
+                    </label>
+                    <a href="#" class="forgot-link">忘记密码？</a>
+                </div>
+
+                <button type="submit" class="submit-btn">登录</button>
+
+                <div class="social-login">
+                    <p>使用第三方账号登录</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </form>
+
+            <!-- 注册表单 -->
+            <form action="" id="registerForm" class="form">
+                <h2>注册新账号</h2>
+                <p class="form-subtitle">开启您的精彩旅程</p>
+
+                <div class="input-group">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="regUsername" placeholder="用户名" required>
+                    <div class="error-message" id="regUsernameError"></div>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="regEmail" placeholder="电子邮箱" required>
+                    <div class="error-message" id="regEmailError"></div>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="regPassword" placeholder="密码" required>
+                    <i class="fas fa-eye-slash password-toggle" data-target="regPassword"></i>
+                    <div class="error-message" id="regPasswordError"></div>
+                </div>
+
+                <div class="input-group">
+                    <i class="fas fa-check-circle input-icon"></i>
+                    <input type="password" id="regConfirmPassword" placeholder="确认密码" required>
+                    <i class="fas fa-eye-slash password-toggle" data-target="regConfirmPassword"></i>
+                    <div class="error-message" id="regConfirmPasswordError"></div>
+                </div>
+
+                <div class="password-strength" id="passwordStrength">
+                    <div class="strength-bar"></div>
+                    <div class="strength-text">密码强度：<span>弱</span></div>
+                </div>
+
+                <div class="form-terms">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agreeTerms" required>
+                        我已阅读并同意 <a href="#">《用户协议》</a> 和 <a href="#">《隐私政策》</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">注册</button>
+
+                <div class="social-login">
+                    <p>或使用第三方账号注册</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
